@@ -6,14 +6,15 @@ version = '0.0.1-SNAPSHOT'
 
 description = """XJCP-Client"""
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
         
      maven { url "http://repo.maven.apache.org/maven2" }
 }
 dependencies {
+    compile project(':xjcp-lib')
     compile 'org.apache.logging.log4j:log4j-api:2.0-rc1'
     compile 'org.apache.logging.log4j:log4j-core:2.0-rc1'
     testCompile 'junit:junit:4.8.1'
