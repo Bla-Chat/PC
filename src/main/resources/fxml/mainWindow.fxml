@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="window" stylesheets="@/css/default-skin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<MenuBar styleClass="menu">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Close" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Delete" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem mnemonicParsing="false" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<HBox VBox.vgrow="ALWAYS">
+			<children>
+				<ScrollPane fitToHeight="true" fitToWidth="true" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" hbarPolicy="NEVER">
+					<content>
+						<VBox fx:id="userPane" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" styleClass="users" />
+					</content>
+				</ScrollPane>
+				<TabPane fx:id="chatPane" prefHeight="200.0" prefWidth="200.0" styleClass="chats" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS" />
+			</children>
+		</HBox>
+	</children>
+</VBox>

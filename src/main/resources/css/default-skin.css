@@ -1,0 +1,57 @@
+.message {
+	-fx-font-size: 12px;
+	-fx-background-radius: 15px;	
+	-fx-background-radius: 3px;
+	-fx-padding: 3px;
+}
+
+.message-me {
+	-fx-alignment: bottom-left;
+	-fx-padding: 3px;
+}
+
+.message-me .message {
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #7438A5;
+}
+
+.message-other {
+	-fx-alignment: bottom-right;
+	-fx-padding: 3px;
+}
+
+.message-other .message {
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #F58A48;
+}
+
+.user-name {
+	-fx-font-size: 16px;
+	-fx-alignment: center;	
+}
+
+.user-info {
+	-fx-font-size: 12px;
+}
+
+.window {
+}
+
+.chat-messages, .menu, .users, .chats {
+	-fx-background-color: #1D1E28;		
+}
+
+.tab-pane *.tab-header-background 
+{
+	-fx-background-color: #1D1E28;
+	-fx-effect: innershadow(two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 0);
+}
+
+.chat-button {
+	
+}
+
+.chat-text {
+	-fx-background-color: #1D1E28;	
+	-fx-text-fill: #FFFFFF;
+}
