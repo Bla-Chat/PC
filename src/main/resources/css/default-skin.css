@@ -1,13 +1,19 @@
+.root {
+    -fx-base: #1D1E28;
+    -fx-background: #1D1E28;
+    -fx-control-inner-background: #1D1E28;
+}
+
 .message {
-	-fx-font-size: 12px;
-	-fx-background-radius: 15px;	
-	-fx-background-radius: 3px;
-	-fx-padding: 3px;
+	-fx-font-size: 12.0px;
+	-fx-background-radius: 15.0px;	
+	-fx-background-radius: 3.0px;
+	-fx-padding: 3.0px;
 }
 
 .message-me {
 	-fx-alignment: bottom-left;
-	-fx-padding: 3px;
+	-fx-padding: 3.0px;
 }
 
 .message-me .message {
@@ -17,7 +23,7 @@
 
 .message-other {
 	-fx-alignment: bottom-right;
-	-fx-padding: 3px;
+	-fx-padding: 3.0px;
 }
 
 .message-other .message {
@@ -26,24 +32,20 @@
 }
 
 .user-name {
-	-fx-font-size: 16px;
+	-fx-font-size: 16.0px;
 	-fx-alignment: center;	
 }
 
 .user-info {
-	-fx-font-size: 12px;
+	-fx-font-size: 12.0px;
 }
 
-.window {
+.user-online {
+	-fx-background-color: #53B753;	
 }
 
-.chat-messages, .menu, .users, .chats {
-	-fx-background-color: #1D1E28;		
-}
-
-.tab-pane *.tab-header-background {
-	-fx-background-color: #1D1E28;
-	-fx-effect: innershadow(two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 0);
+.user-offline {
+	-fx-background-color: #E56868;
 }
 
 .chat-button {
@@ -53,12 +55,4 @@
 .chat-text {
 	-fx-background-color: #1D1E28;	
 	-fx-text-fill: #FFFFFF;
-}
-
-.user-online {
-	-fx-background-color: #53B753;	
-}
-
-.user-offline {
-	-fx-background-color: #E56868;
 }
