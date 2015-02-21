@@ -41,8 +41,7 @@
 	-fx-background-color: #1D1E28;		
 }
 
-.tab-pane *.tab-header-background 
-{
+.tab-pane *.tab-header-background {
 	-fx-background-color: #1D1E28;
 	-fx-effect: innershadow(two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 0);
 }
@@ -54,4 +53,12 @@
 .chat-text {
 	-fx-background-color: #1D1E28;	
 	-fx-text-fill: #FFFFFF;
+}
+
+.user-online {
+	-fx-background-color: #53B753;	
+}
+
+.user-offline {
+	-fx-background-color: #E56868;
 }
