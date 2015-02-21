@@ -18,10 +18,10 @@
 		</ScrollPane>
 		<HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0">
 			<children>
-				<TextArea styleClass="chat-text" wrapText="true" HBox.hgrow="ALWAYS" />
+				<TextArea fx:id="textbox" styleClass="chat-text" wrapText="true" HBox.hgrow="ALWAYS" />
 				<Group HBox.hgrow="NEVER">
 					<children>
-						<Button alignment="CENTER" mnemonicParsing="false" styleClass="chat-button" text="Send">
+						<Button alignment="CENTER" mnemonicParsing="false" onAction="#sendMessage" styleClass="chat-button" text="Send">
 							<font>
 								<Font size="20.0" />
 							</font>

@@ -82,7 +82,7 @@ public final class FxGUI extends Application {
 	public void start(final Stage primaryStage) throws Exception {
 		List<Conversation> conversations = xjcp.requestChats().get();
 		for (Conversation c : conversations) {
-			Chat chat = new Chat(c.getName());
+			Chat chat = new Chat(xjcp, c);
 
 			ChatHistory history = xjcp.requestHistory(c.getConversation(), 100).get();
 			for (ChatMessage m : history.getMessages()) {
