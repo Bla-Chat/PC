@@ -5,9 +5,7 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
 import javafx.application.Application;
 import javafx.fxml.FXML;
@@ -48,20 +46,7 @@ public final class FxGUI extends Application {
 
 	}
 
-	public static void main(final String[] args) throws InterruptedException, ExecutionException,
-		TimeoutException, IOException {
-		// System.out.println(user + "@" + host + " using " + password);
-		//
-		// XJCP xjcp = new DesktopXJCP(host);
-		//
-		// System.out.println("login: " + xjcp.login(user, password).get(2, TimeUnit.SECONDS));
-		// System.out.println("contacts: " + xjcp.requestContacts().get(2, TimeUnit.SECONDS));
-		// System.out.println("chats: " + xjcp.requestChats().get(2, TimeUnit.SECONDS));
-		// System.out.println("messages: " + xjcp.requestHistory("penguinmenac3,thedwoon", 2).get(2,
-		// TimeUnit.SECONDS));
-		//
-		// xjcp.shutdown();
-
+	public static void main(final String[] args) {
 		launch(args);
 	}
 
