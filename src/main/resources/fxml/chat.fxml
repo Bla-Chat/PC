@@ -9,8 +9,7 @@
 
 <VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 	<children>
-		<ScrollPane fitToHeight="true" fitToWidth="true"
-			VBox.vgrow="ALWAYS">
+		<ScrollPane fx:id="messagesScroller" fitToHeight="true" fitToWidth="true" VBox.vgrow="ALWAYS">
 			<content>
 				<VBox fx:id="messages" alignment="BOTTOM_CENTER">
 					<styleClass>chat-messages</styleClass>
@@ -22,7 +21,7 @@
 				<TextArea styleClass="chat-text" wrapText="true" HBox.hgrow="ALWAYS" />
 				<Group HBox.hgrow="NEVER">
 					<children>
-						<Button styleClass="chat-button" alignment="CENTER" mnemonicParsing="false" text="Send">
+						<Button alignment="CENTER" mnemonicParsing="false" styleClass="chat-button" text="Send">
 							<font>
 								<Font size="20.0" />
 							</font>

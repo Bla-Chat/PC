@@ -2,6 +2,8 @@ package jdw.xjcp.client;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
@@ -26,7 +28,9 @@ import net.michaelfuerst.xjcp.protocol.Contact;
 import net.michaelfuerst.xjcp.protocol.Conversation;
 
 public final class FxGUI extends Application {
-	public static final URL MAIN_WINDOW_LOC = FxGUI.class.getResource("/fxml/mainWindow.fxml");
+	private static final URL MAIN_WINDOW_LOC = FxGUI.class.getResource("/fxml/mainWindow.fxml");
+	private static final DateTimeFormatter MESSAGE_TIME_FORMAT = DateTimeFormatter
+		.ofPattern("yyyy-MM-dd HH:mm:ss");
 
 	private String host;
 	private String user;
@@ -87,7 +91,8 @@ public final class FxGUI extends Application {
 					type = MessageType.OTHER;
 				}
 
-				chat.addMessages(new Message(type, m.getText()));
+				chat.addMessages(new Message(type, m.getText(), LocalDateTime.parse(m.getTime(),
+					MESSAGE_TIME_FORMAT)));
 			}
 
 			chatPane.getTabs().add(chat);
