@@ -74,6 +74,7 @@ public final class Chat extends Tab {
 		textbox.clear();
 		xjcp.sendMessage(conversation.getConversation(), text);
 		try {
+			//FIXME execute as JavaFX Thread or else it will die.
 			messages.getChildren().add(new Message(MessageType.ME, text, LocalDateTime.now()).getRootPane());
 		} catch (IOException e) {
 			// TODO handle in a way
