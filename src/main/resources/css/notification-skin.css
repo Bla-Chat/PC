@@ -1,0 +1,13 @@
+.root {
+}
+
+.notification {
+    -fx-base: #1D1E28;
+    -fx-background: #1D1E28;
+    -fx-control-inner-background: #1D1E28;
+}
+
+.text {
+	-fx-font-size: 12px;
+	-fx-padding: 3px;
+}

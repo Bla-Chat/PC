@@ -19,6 +19,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import jdw.xjcp.client.Message.MessageType;
 import jdw.xjcp.client.User.UserState;
+import jdw.xjcp.client.notification.Notification;
 import net.michaelfuerst.xjcp.DesktopXJCP;
 import net.michaelfuerst.xjcp.EventHandler;
 import net.michaelfuerst.xjcp.XJCP;
@@ -75,6 +76,8 @@ public final class FxGUI extends Application {
 
 	@Override
 	public void start(final Stage primaryStage) throws Exception {
+		Notification.info("Hello World!").show();
+		
 		List<Conversation> conversations = xjcp.requestChats().get();
 		for (Conversation c : conversations) {
 			Chat chat = new Chat(xjcp, c);
